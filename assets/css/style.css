@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
 }
 
@@ -53,6 +54,7 @@ a {
 }
 
 .column {
+    display: flex;
     flex-direction: column;
 }
 
@@ -73,10 +75,30 @@ a {
     cursor: pointer;
 }
 
+.w-30 {
+    width: 30%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
 .container {
+    padding: 40px;
+}
+
+.ctn {
+    padding: 0 30px;
+}
+
+.ctn, .container {
     margin: 0 auto;
-    padding: 0 40px;
     max-width: 1180px;
+    width: 100%;
 }
 
 
@@ -93,22 +115,22 @@ header {
     display: none;
 }
 
-header .container .logo .img-logo {
+header .ctn .logo .img-logo {
     width: 5rem;
 }
 
-header .container .logo .img-logo,
-header .container .burger-ctn button {
-    padding: 10px 0;
-    margin: 10px 0;
+header .ctn .logo .img-logo,
+header .ctn .burger-ctn button {
+    padding: 10px;
+    margin: 10px;
 }
 
-header .container .burger-ctn button {
+header .ctn .burger-ctn button {
     background-color: transparent;
     border: 0;
 }
 
-header .container .burger-ctn button i {
+header .ctn .burger-ctn button i {
     color: var(--text-color);
     font-size: 1.3rem;
 }
@@ -117,7 +139,10 @@ header .container .burger-ctn button i {
 /************* MAIN ***********
 *********************************/
 
-.container .services .col {
+
+/**** services section *****/
+
+.services .col {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 1.5rem;
@@ -125,41 +150,356 @@ header .container .burger-ctn button i {
     margin: 20px 0;
 }
 
-.container .services .col p {
-    color: #000;
+.services .col-big .right {
+    text-align: center;
 }
+
+.services .col-big button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.services .col-big button i {
+    font-size: 0.85rem;
+}
+
+.col-big .right img {
+    width: 50%;
+}
+
+.services .col-sm {
+    text-align: center;
+}
+
+.services .col h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.services .col p {
+    color: #000;
+    line-height: 1.5rem;
+}
+
+.services .col .laptop-icon {
+    text-align: center;
+}
+
+.services .col .laptop-icon i {
+    font-size: 5rem;
+}
+
+
+/**** planning section ****/
 
 .planning {
     background-color: var(--third-color);
 }
 
+.planning .left,
+.planning .right {
+    padding: 1.25rem;
+}
 
+.planning .left {
+    color: var(--text-color);
+}
 
+.planning .left h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
 
+.planning .left p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
 
+.planning .left .img-ctn img,
+.planning .right .img-ctn img  {
+    width: 100%;
+}
 
+.planning .right {
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    color: #000;
+}
 
+.planning .right button {
+    background-color: var(--third-color);
+    padding: 15px;
+    border-radius: 50%;
+    border: 0;
+}
 
+.planning .right button i {
+    font-size: 1.2rem;
+}
 
+/**** testimonials section ****/
 
+.testimonials {
+    text-align: center;
+}
 
+.testimonials h2 {
+    font-weight: 500;
+    font-size: 1rem;
+}
 
+.testimonials h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
 
+.testimonials p {
+    line-height: 1.8rem;
+}
 
+.testimonials .card {
+    background-color: var(--third-color);
+    color: var(--text-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 50px;
+    align-items: center;
+}
 
+.card .pic,
+.about-us .right .pic  {
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
+.natepic {
+    background-image: url(../images/testimonial1.jpg);
+}
 
+.celiapic {
+    background-image: url(../images/testimonial2.jpg);
+}
 
+.bobpic {
+    background-image: url(../images/testimonial3.jpg);
+}
 
+.card .text > span {
+    font-size: 1rem;
+    font-weight: 700;
+}
 
+.card .text p > span {
+    font-size: 2rem;
+}
 
+/**** benefits section ****/
 
+.benefits {
+    background-color: var(--third-color);
+    color: #ffffff;
+    text-align: center;
+}
 
+.benefits h2 {
+    font-size: 2rem;
+}
+
+.benefits .card-ctn .card {
+    background-color: var(--text-color);
+    color: var(--third-color);
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.benefits .card-ctn .card h4 {
+    font-size: 3rem;
+}
+
+.benefits .card-ctn .card h5 {
+    font-size: 1.5rem;
+}
+
+.benefits .card-ctn .card p {
+    color: #000;
+    line-height: 1.5rem;
+}
+
+.benefits .card-ctn .card button {
+    background-color: var(--third-color);
+    color: var(--text-color);
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 0;
+}
+
+/**** about us section ****/
+
+.about-us .left h2 {
+    color: var(--third-color);
+    font-size: 2.5rem;
+}
+
+.about-us .left p {
+    line-height: 2rem;
+}
+
+.aboutus-pic {
+    background-image: url(../images/about.jpg);
+}
+
+.about-us .right p {
+    color: var(--third-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about-us .right button {
+    background-color: var(--third-color);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+
+/**** get started section ****/
+
+.get-started {
+    background-color: var(--third-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.get-started h2 {
+    color: #c7c5f0;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.get-started h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.get-started h4 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #fdc15f;
+}
+
+.get-started p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+.get-started button {
+    background-color: var(--text-color);
+    color: var(--third-color);
+    border: 0;
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.get-started > small span {
+    text-decoration: underline;
+}
+
+/**** last section ****/
+
+.footer-bottom {
+    background-color: #333333;
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+
+.footer-bottom p > span {
+    text-decoration: underline;
+    color: #726fa3;
+}
 
 /*********** MEDIA QUERIES ************
 ****************************************/
 
 @media screen and (min-width: 768px) {
+
+    .about-us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us .left,
+    .about-us .right {
+        width: 45%;
+    }
+
+    .benefits h2 {
+        margin-bottom: 30px;
+    }
+
+    .benefits .card-ctn {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .benefits .card-ctn .card {
+        width: 48%;
+    }
+
+    .testimonials .card-ctn .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonials .card-ctn .card .pic {
+        width: 28%;
+    }
+
+    .testimonials .card-ctn .card .text {
+        width: 70%;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .services .col-big {
+        width: 65%;
+    }
+
+    .services .col-sm {
+        width: 30%;
+    }
+
+
 
 
 }
@@ -174,6 +514,59 @@ header .container .burger-ctn button i {
     .mobile-hidden {
         display: block;
     }
+
+    .menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu ul li {
+        padding: 10px 5px;
+        margin: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .menu ul li a > button {
+        background-color: var(--text-color);
+        border: 0;
+        border-radius: 15px;
+        padding: 6px 10px;
+    }
+
+    .benefits .card-ctn .card {
+        width: 32%;
+    }
+
+    .planning {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .planning .left,
+    .planning .right {
+        width: 48%;
+    }
+
+    .services .col-big {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services .col-big .left,
+    .services .col-big .right {
+        width: 48%;
+    }
+
+    .services .col-big .right {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .services .col-big .right img {
+        width: 100%;
+    }
+
+  
 
 
 }

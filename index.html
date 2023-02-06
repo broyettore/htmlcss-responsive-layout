@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Responsive Layout</title>
@@ -11,8 +14,8 @@
 <body>
 
     <!-- header  -->
-    <header class="mb-40">
-        <div class="container row space-bet">
+    <header class="mb-20">
+        <div class="ctn row space-bet">
             <div class="logo">
                 <img src="assets/images/logo.png" alt="logo" class="img-logo">
             </div>
@@ -44,194 +47,231 @@
 
     <!-- main  -->
     <main>
-        <div class="container">
-            <section class="services">
-                <div class="col">
-                    <div class="left">
-                        <h3 class="mb-20">Get a demo application</h3>
-                        <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis laborum delectus neque nemo deserunt dicta nisi, amet eveniet odit culpa, reprehenderit iusto?</p>
-                        <div>
-                            <a href="#">
-                                <button>
-                                    <i class="fa-brands fa-apple">App Store</i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="right">
-                        <!-- <img src="assets/images/phone.png" alt="phone image"> -->
-                    </div>
-                </div>
-                <div class="col">
+        <!-- services section  -->
+        <section class="services container">
+            <div class="col col-big">
+                <div class="left mb-40">
                     <h3 class="mb-20">Get a demo application</h3>
                     <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis laborum delectus neque nemo deserunt dicta nisi, amet eveniet odit culpa, reprehenderit iusto?</p>
                     <div>
                         <a href="#">
                             <button>
-                                <i class="fa-brands fa-apple">App Store</i>
+                                <i class="fa-brands fa-apple"></i>
+                                App Store
                             </button>
                         </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h3 class="mb-20">Get a demo application</h3>
-                    <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis laborum delectus neque nemo deserunt dicta nisi, amet eveniet odit culpa, reprehenderit iusto?</p>
-                    <div>
-                        <a href="#">
-                            <button>
-                                <i class="fa-brands fa-apple">App Store</i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h3 class="mb-20">Get a demo application</h3>
-                    <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis laborum delectus neque nemo deserunt dicta nisi, amet eveniet odit culpa, reprehenderit iusto?</p>
-                    <div>
-                        <a href="#">
-                            <button>
-                                <i class="fa-brands fa-apple">App Store</i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h3 class="mb-20">Get a demo application</h3>
-                    <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis laborum delectus neque nemo deserunt dicta nisi, amet eveniet odit culpa, reprehenderit iusto?</p>
-                    <div>
-                        <a href="#">
-                            <button>
-                                <i class="fa-brands fa-apple">App Store</i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-    
-            </section>
-            <section class="planning">
-                <div class="left">
-                    <div class="img-ctn">
-                        <img src="assets/images/planning1.png" alt="image of a woman with a laptop">
-                    </div>
-                    <div class="text">
-                        <h3>Strategic Planning</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolores quidem non. Soluta, numquam delectus? Voluptatibus sunt, suscipit ut reprehenderit esse amet sit nemo aliquam blanditiis ducimus nobis quibusdam asperiores?</p>
                     </div>
                 </div>
                 <div class="right">
-                    <div class="img-ctn">
-                        <img src="assets/images/planning2.png" alt="image of a woman with a laptop">
-                    </div>
-                    <div class="text">
-                        <h3>App Developement</h3>
-                        <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption</p>
-                    </div>
-                    <button>
-                        <i class="fa-solid fa-arrow-down-long"></i>
-                    </button>
+                    <img src="assets/images/phone.png" alt="phone image">
                 </div>
-            </section>
-            <section class="testimonials">
-                <small class="mb-20">TESTIMONIALS</small>
-                <h2 class="mb-20">We are committed expert partners</h2>
-                <p class="mb-20">We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right</p>
-                <div class="card-ctn">
-                    <div class="card">
-                        <div class="pic">
-                            <img src="assets/images/testimonial1.jpg" alt="man testimonial">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis voluptates. Dolore tempore enim error animi aut?</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="pic">
-                            <img src="assets/images/testimonial2.jpg" alt="woman testimonial">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis voluptates. Dolore tempore enim error animi aut?</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="pic">
-                            <img src="assets/images/testimonial3.jpg" alt="man testimonial">
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis voluptates. Dolore tempore enim error animi aut?</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col  col-sm">
+                <div class="laptop-icon mb-20">
+                    <i class="fa-solid fa-laptop-code"></i>
                 </div>
-            </section>
-            <section class="benefits">
-                <h2>Benefits of working with us</h2>
-                <div class="card-ctn">
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                <h3 class="mb-20">Get a demo application</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis. sapiente inventore et perferendis sapiente inventore et perferendis.</p>
+            </div>
+            <div class="col  col-sm">
+                <div class="laptop-icon mb-20">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="mb-20">Get a demo application</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis. sapiente inventore et perferendis sapiente inventore et perferendis.</p>
+            </div>
+            <div class="col  col-sm">
+                <div class="laptop-icon mb-20">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="mb-20">Get a demo application</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis. sapiente inventore et perferendis sapiente inventore et perferendis.</p>
+            </div>
+            <div class="col  col-sm">
+                <div class="laptop-icon mb-20">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="mb-20">Get a demo application</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores architecto nihil rem sapiente inventore et perferendis. sapiente inventore et perferendis sapiente inventore et perferendis.</p>
+            </div>
+        </section>
+        <!-- /services section  -->
+        <!-- planning section  -->
+        <section class="planning container">
+            <div class="left mb-20">
+                <div class="img-ctn mb-40">
+                    <img src="assets/images/planning1.png" alt="image of a woman with a laptop">
+                </div>
+                <div class="text">
+                    <h3 class="mb-40">Strategic Planning</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi dolores quidem non. Soluta, numquam delectus? Voluptatibus sunt, suscipit ut reprehenderit esse amet sit nemo aliquam blanditiis ducimus nobis quibusdam asperiores?</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img-ctn mb-20">
+                    <img src="assets/images/planning2.png" alt="image of a woman with a laptop">
+                </div>
+                <div class="text mb-20">
+                    <h3 class="mb-20">App Developement</h3>
+                    <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption</p>
+                </div>
+                <button>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </button>
+            </div>
+        </section>
+        <!-- /planning section  -->
+
+        <!-- testimonials section  -->
+        <section class="testimonials container">
+            <h2 class="mb-20">TESTIMONIALS</h2>
+            <h3 class="mb-20">We are committed expert partners</h3>
+            <p class="mb-20">We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right</p>
+            <div class="card-ctn">
+                <div class="card column">
+                    <div class="pic natepic mb-20">
                     </div>
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
-                    </div>
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
-                    </div>
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
-                    </div>
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
-                    </div>
-                    <div class="card">
-                        <h4>01</h4>
-                        <h5>High Quality</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div class="text mb-20">
+                        <p class="mb-20"><span>&#10077;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis <span>&#10078;</span></p>
+                        <span>NAT REYNOLDS</span>
                     </div>
                 </div>
-            </section>
-            <section class="about-us">
-                <div class="left">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla expedita nesciunt. Amet, sunt! Repudiandae nam repellat, id quisquam, voluptatem earum saepe expedita eaque impedit aliquid, libero at voluptatum quibusdam?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere reiciendis aperiam ea enim repellat quos cum distinctio dolores recusandae. Vel, architecto ratione! Recusandae, possimus! Blanditiis temporibus totam ipsa dolore?</p>
-                </div>
-                <div class="right">
-                    <div class="pic">
-                        <img src="assets/images/about.jpg" alt="a man">
+            </div>
+            <div class="card-ctn">
+                <div class="card column">
+                    <div class="pic celiapic mb-20">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel facilis laboriosam. Excepturi quam inventore ducimus consectetur possimus a dolore.</p>
+                    <div class="text mb-20">
+                        <p class="mb-20"><span>&#10077;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis <span>&#10078;</span></p>
+                        <span>CELIA ALMEDA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-ctn">
+                <div class="card column">
+                    <div class="pic bobpic mb-20">
+                    </div>
+                    <div class="text mb-20">
+                        <p class="mb-20"><span>&#10077;</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quia veritatis, ipsa asperiores explicabo iste hic ullam, debitis laborum quibusdam doloribus saepe nobis <span>&#10078;</span></p>
+                        <span>BOB ROBERTS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /testimonials section  -->
+        <!-- benefits section  -->
+        <section class="benefits container">
+            <h2>Benefits of working with us</h2>
+            <div class="card-ctn">
+                <div class="card">
+                    <h4 class="mb-20">01</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
                     <div>
                         <a href="#">
                             <button>
-                                <i class="fa-brands fa-linkedin">
-                                    Find me on fa-linkedin
-                                </i>
+                                more
                             </button>
                         </a>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="card">
+                    <h4 class="mb-20">02</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div>
+                        <a href="#">
+                            <button>
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="mb-20">03</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div>
+                        <a href="#">
+                            <button>
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="mb-20">04</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div>
+                        <a href="#">
+                            <button>
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="mb-20">05</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div>
+                        <a href="#">
+                            <button>
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="mb-20">06</h4>
+                    <h5 class="mb-20">High Quality</h5>
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tenetur, est ipsa unde dicta repellendus pariatur corrupti voluptatem quasi velit, iure minima similique, ullam aliquid ipsam tempora suscipit eum eligendi.</p>
+                    <div>
+                        <a href="#">
+                            <button>
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /benefits section  -->
+        <!-- about us section  -->
+        <section class="about-us container">
+            <div class="left mb-40">
+                <h2 class="mb-20">About Us</h2>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla expedita nesciunt. Amet, sunt! Repudiandae nam repellat, id quisquam, voluptatem earum saepe expedita eaque impedit aliquid, libero at voluptatum quibusdam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere reiciendis aperiam ea enim repellat quos cum distinctio dolores recusandae. Vel, architecto ratione! Recusandae, possimus! Blanditiis temporibus totam ipsa dolore?</p>
+            </div>
+            <div class="right">
+                <div class="pic aboutus-pic mb-20">
+                </div>
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel facilis laboriosam. Excepturi quam inventore ducimus.</p>
+                <div>
+                    <a href="#">
+                        <button>
+                            <i class="fa-brands fa-linkedin"></i>
+                            Find me on linkedin
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+         <!-- /about us section  -->
     </main>
     <!-- /main  -->
 
     <!-- footer  -->
     <footer>
+        <!-- get started section  -->
         <section class="get-started">
-            <small class="mb-20">GET STARTED</small>
-            <h2 class="mb-20">Simple, Transparent Pricing</h2>
-            <h3 class="mb-20">It's Free</h3>
+            <h2 class="mb-20">GET STARTED</h2>
+            <h3 class="mb-20">Simple, Transparent Pricing</h3>
+            <h4 class="mb-20">It's Free !</h4>
             <p class="mb-20">We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans wit more controls.</p>
-            <div>
+            <div class="mb-20">
                 <a href="#">
                     <button>Get Started</button>
                 </a>
@@ -241,14 +281,17 @@
                 <span>Privacy policy</span>
             </small>
         </section>
+         <!-- /get started section  -->
+        <!-- last section  -->
         <div class="footer-bottom">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est adipisci quidem fuga ex laborum labore repudiandae.</p>
+            <p class="mb-40">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est adipisci quidem fuga ex laborum labore repudiandae.</p>
             <p>
                 <span>Lorem ipsum</span>
                 scelerisque mauris pellentesque
                 <span>Boolean carreers</span>
             </p>
         </div>
+         <!-- /last section  -->
     </footer>
     <!-- /footer  -->
     
