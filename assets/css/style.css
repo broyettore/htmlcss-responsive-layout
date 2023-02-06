@@ -10,5 +10,170 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/******************* ROOT VARIABLES **********************
+*************************************************************/
+
+:root {
+
+     /* colors  */
+
+    --primary-color: #0084fd;
+    --secondary-color: #b5ddff;
+    --third-color: #9792e4;
+    --text-color: #ffffff;
+
+}
+
+
+/******************** REUSABE CLASSES **********************
+**************************************************************/
+
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.space-bet {
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-60 {
+    margin-bottom: 3.75rem;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1180px;
+}
+
+
+/************* HEADER ***********
+*********************************/
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+header .container .logo .img-logo {
+    width: 5rem;
+}
+
+header .container .logo .img-logo,
+header .container .burger-ctn button {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+header .container .burger-ctn button {
+    background-color: transparent;
+    border: 0;
+}
+
+header .container .burger-ctn button i {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+
+/************* MAIN ***********
+*********************************/
+
+.container .services .col {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    margin: 20px 0;
+}
+
+.container .services .col p {
+    color: #000;
+}
+
+.planning {
+    background-color: var(--third-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** MEDIA QUERIES ************
+****************************************/
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+
+@media  screen and (min-width: 992px) {
+    
+    .desktop-hidden {
+        display: none;
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+
+
 }
