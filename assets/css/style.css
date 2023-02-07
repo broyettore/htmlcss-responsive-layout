@@ -75,18 +75,6 @@ a {
     cursor: pointer;
 }
 
-.w-30 {
-    width: 30%;
-}
-
-.w-45 {
-    width: 45%;
-}
-
-.w-70 {
-    width: 70%;
-}
-
 .container {
     padding: 40px;
 }
@@ -202,31 +190,31 @@ header .ctn .burger-ctn button i {
     background-color: var(--third-color);
 }
 
-.planning .left,
-.planning .right {
+.planning .container .left,
+.planning .container .right {
     padding: 1.25rem;
 }
 
-.planning .left {
+.planning .container .left {
     color: var(--text-color);
 }
 
-.planning .left h3 {
+.planning .container .left h3 {
     font-weight: 700;
     font-size: 1.8rem;
 }
 
-.planning .left p {
+.planning .container .left p {
     font-size: 0.9rem;
     line-height: 1.5rem;
 }
 
-.planning .left .img-ctn img,
-.planning .right .img-ctn img  {
+.planning .container .left .img-ctn img,
+.planning .container .right .img-ctn img  {
     width: 100%;
 }
 
-.planning .right {
+.planning .container .right {
     background-color: var(--text-color);
     text-align: center;
     padding: 20px;
@@ -234,14 +222,14 @@ header .ctn .burger-ctn button i {
     color: #000;
 }
 
-.planning .right button {
+.planning .container .right button {
     background-color: var(--third-color);
     padding: 15px;
     border-radius: 50%;
     border: 0;
 }
 
-.planning .right button i {
+.planning .container .right button i {
     font-size: 1.2rem;
 }
 
@@ -313,11 +301,11 @@ header .ctn .burger-ctn button i {
     text-align: center;
 }
 
-.benefits h2 {
+.benefits .container h2 {
     font-size: 2rem;
 }
 
-.benefits .card-ctn .card {
+.benefits .container .card-ctn .card {
     background-color: var(--text-color);
     color: var(--third-color);
     padding: 20px 25px;
@@ -326,20 +314,20 @@ header .ctn .burger-ctn button i {
     text-align: left;
 }
 
-.benefits .card-ctn .card h4 {
+.benefits .container .card-ctn .card h4 {
     font-size: 3rem;
 }
 
-.benefits .card-ctn .card h5 {
+.benefits .container .card-ctn .card h5 {
     font-size: 1.5rem;
 }
 
-.benefits .card-ctn .card p {
+.benefits .container .card-ctn .card p {
     color: #000;
     line-height: 1.5rem;
 }
 
-.benefits .card-ctn .card button {
+.benefits .container .card-ctn .card button {
     background-color: var(--third-color);
     color: var(--text-color);
     padding: 10px 30px;
@@ -456,18 +444,19 @@ header .ctn .burger-ctn button i {
         width: 45%;
     }
 
-    .benefits h2 {
+    .benefits .container h2 {
         margin-bottom: 30px;
     }
 
-    .benefits .card-ctn {
+    .benefits .container .card-ctn {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    .benefits .card-ctn .card {
+    .benefits .container .card-ctn .card {
         width: 48%;
+        margin: 10px 0;
     }
 
     .testimonials .card-ctn .card {
@@ -492,14 +481,16 @@ header .ctn .burger-ctn button i {
     }
 
     .services .col-big {
-        width: 65%;
+        width: 66%;
     }
 
     .services .col-sm {
-        width: 30%;
+        width: 32%;
     }
 
-
+    .services .col {
+        margin: 10px 0;
+    }
 
 
 }
@@ -533,17 +524,17 @@ header .ctn .burger-ctn button i {
         padding: 6px 10px;
     }
 
-    .benefits .card-ctn .card {
+    .benefits .container .card-ctn .card {
         width: 32%;
     }
 
-    .planning {
+    .planning .container {
         display: flex;
         justify-content: space-between;
     }
 
-    .planning .left,
-    .planning .right {
+    .planning .container .left,
+    .planning .container .right {
         width: 48%;
     }
 
@@ -566,7 +557,8 @@ header .ctn .burger-ctn button i {
         width: 100%;
     }
 
-  
-
+    .about-us {
+        padding: 8rem 0;
+    }
 
 }
